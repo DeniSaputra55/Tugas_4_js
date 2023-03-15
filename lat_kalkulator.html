@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="css/lat_kalkulator.css">
+</head>
+<body>
+    <h1>Kalkulator Sederhana</h1>
+	<table>
+		<tr>
+			<th>Angka 1</th>
+			<td><input type="number" id="angka1"></td>
+		</tr>
+		<tr>
+			<th>Angka 2</th>
+			<td><input type="number" id="angka2"></td>
+		</tr>
+		<tr>
+			<th>Operasi</th>
+			<td>
+				<select id="operasi">
+					<option value="tambah">Penjumlahan (+)</option>
+					<option value="kurang">Pengurangan (-)</option>
+					<option value="kali">Perkalian (x)</option>
+					<option value="bagi">Pembagian (/)</option>
+					<option value="pangkat">Pangkat (^)</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>Hasil</th>
+			<td><input type="text" id="hasil" readonly></td>
+		</tr>
+		<tr>
+			<td colspan="2"><button onclick="hitung()">Hitung</button></td>
+		</tr>
+	</table>
+</body>
+<script src="js/lat_kalkulator.js"></script>
+</html>
